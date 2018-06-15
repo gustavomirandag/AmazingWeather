@@ -94,6 +94,7 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\mob_es128px" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -147,6 +148,9 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>11.0.2</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.0.0.446417" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -155,5 +159,80 @@
       <Project>{43597ABE-95C7-483A-8143-77BD6E75AEBC}</Project>
       <Name>ForecastApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob_.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob2n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob2r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob2rn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob3n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob3TM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob4n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob4r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob4rn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob4t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob4tn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob5n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob6n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob7n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob8n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\mob9n.png" />
   </ItemGroup>
 </Project>

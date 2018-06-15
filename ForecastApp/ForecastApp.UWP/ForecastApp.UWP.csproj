@@ -130,6 +130,31 @@
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="Images\mob.png" />
+    <Content Include="Images\mob2.png" />
+    <Content Include="Images\mob2n.png" />
+    <Content Include="Images\mob2r.png" />
+    <Content Include="Images\mob2rn.png" />
+    <Content Include="Images\mob3.png" />
+    <Content Include="Images\mob3n.png" />
+    <Content Include="Images\mob3TM.png" />
+    <Content Include="Images\mob4.png" />
+    <Content Include="Images\mob4n.png" />
+    <Content Include="Images\mob4r.png" />
+    <Content Include="Images\mob4rn.png" />
+    <Content Include="Images\mob4t.png" />
+    <Content Include="Images\mob4tn.png" />
+    <Content Include="Images\mob5.png" />
+    <Content Include="Images\mob5n.png" />
+    <Content Include="Images\mob6.png" />
+    <Content Include="Images\mob6n.png" />
+    <Content Include="Images\mob7.png" />
+    <Content Include="Images\mob7n.png" />
+    <Content Include="Images\mob8.png" />
+    <Content Include="Images\mob8n.png" />
+    <Content Include="Images\mob9.png" />
+    <Content Include="Images\mob9n.png" />
+    <Content Include="Images\mob_.png" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -143,14 +168,20 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>11.0.2</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.0.0.446417" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.0.1"/>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.0.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ForecastApp\ForecastApp.csproj">
       <Project>{43597ABE-95C7-483A-8143-77BD6E75AEBC}</Project>
       <Name>ForecastApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\mob_es128px" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

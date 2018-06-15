@@ -4,11 +4,14 @@
              xmlns:local="clr-namespace:ForecastApp"
              x:Class="ForecastApp.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="ImageIcon" HorizontalOptions="Start"/>
+            <Label x:Name="LbState" FontSize="Large" />
+            <Label x:Name="LbDate" FontSize="Large"/>
+            <Label x:Name="LbTemp" FontSize="Large"/>
+            <Label x:Name="LbReview" FontSize="Large"/>
+        </StackLayout>
+    </ContentPage.Content>
 
 </ContentPage>
