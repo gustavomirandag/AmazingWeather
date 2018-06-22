@@ -10,7 +10,7 @@ namespace ForecastApp.Service
     {
         public SingleDayWeather GetCurrentWeather()
         {
-            WebRequest webRequest = WebRequest.Create("http://apiadvisor.climatempo.com.br/api/v1/weather/locale/5959/current?token=DIGITE_AQUI_SEU_TOKEN");
+            WebRequest webRequest = WebRequest.Create("http://apiadvisor.climatempo.com.br/api/v1/weather/locale/5959/current?token=c04bb061adc4fe108259c3c8e034ef88");
             var response = webRequest.GetResponseAsync();
             WebHeaderCollection header = response.Result.Headers;
 
@@ -20,6 +20,22 @@ namespace ForecastApp.Service
                 serializedWeather = reader.ReadToEnd();
             }
             SingleDayWeather weather = Newtonsoft.Json.JsonConvert.DeserializeObject<SingleDayWeather>(serializedWeather);
+
+            return weather;
+        }
+
+        public MultipleDaysWeather GetNextDaysWeather()
+        {
+            WebRequest webRequest = WebRequest.Create("http://apiadvisor.climatempo.com.br/api/v1/forecast/locale/5959/days/15?token=c04bb061adc4fe108259c3c8e034ef88");
+            var response = webRequest.GetResponseAsync();
+            WebHeaderCollection header = response.Result.Headers;
+
+            string serializedWeather;
+            using (var reader = new System.IO.StreamReader(response.Result.GetResponseStream()))
+            {
+                serializedWeather = reader.ReadToEnd();
+            }
+            MultipleDaysWeather weather = Newtonsoft.Json.JsonConvert.DeserializeObject<MultipleDaysWeather>(serializedWeather);
 
             return weather;
         }

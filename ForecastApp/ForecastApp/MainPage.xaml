@@ -5,13 +5,19 @@
              x:Class="ForecastApp.MainPage">
 
     <ContentPage.Content>
-        <StackLayout>
-            <Image x:Name="ImageIcon" HorizontalOptions="Start"/>
-            <Label x:Name="LbState" FontSize="Large" />
-            <Label x:Name="LbDate" FontSize="Large"/>
-            <Label x:Name="LbTemp" FontSize="Large"/>
-            <Label x:Name="LbReview" FontSize="Large"/>
-        </StackLayout>
+        <ScrollView Orientation="Vertical">
+            <StackLayout Spacing="40">
+                <StackLayout Margin="30">
+                    <Image x:Name="ImageIcon" HorizontalOptions="Start"/>
+                    <Label x:Name="LbState" FontSize="Large" />
+                    <Label x:Name="LbDate" FontSize="Large"/>
+                    <Label x:Name="LbTemp" FontSize="Large"/>
+                    <Label x:Name="LbReview" FontSize="Large"/>
+                </StackLayout>
+                <StackLayout x:Name="StackLayoutNextDays" Spacing="40">
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 
 </ContentPage>
